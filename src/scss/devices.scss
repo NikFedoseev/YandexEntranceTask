@@ -1,0 +1,73 @@
+.devices {
+	width: 100%;
+	padding-left: 40px;
+}
+.devices-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.devices-header span {
+	font-size: 18px;
+	color: #333333;
+	margin-right: 13px;
+}
+.device-header__navigation a {
+	display: inline-block;
+	padding: 8px 14px;
+	background-color: #F7F7F7;
+	border-radius: 20px;
+	font-size: 13px;
+	color: #000000;
+	margin-right: 10px;
+}
+.device-header__navigation a.active {
+	background-color: #FFD93E;
+}
+.devices-content {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: hidden;
+}
+.devices-item {
+	width: 200px;
+	height: 120px;
+	min-width: 200px;
+	background: #F7F7F7;
+	border-radius: 20px;
+	margin-bottom: 15px;
+	padding: 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.devices-item__icon {
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+}
+.devices-item__title {
+	font-size: 14px;
+	text-align: left;
+}
+.devices-item__subtitle {
+	font-size: 12px;
+	text-align: left;
+	font-family: "ArialMT";
+	color: #858585;
+	margin-top: 3px;
+}
+.bulb .devices-item__icon {
+	background-image: url('/src/assets/icon_sun@1x.png');
+}
+.bulb.active .devices-item__icon {
+	background-image: url('/src/assets/icon_sun_2@1x.png');
+}
+.temperature .device-item__icon {
+	background-image: url('/src/assets/icon_temperature@1x.png');
+}
+.temperature.active .device-item__icon {
+	background-image: url('/src/assets/icon_temperature_2@1x.png');
+}

@@ -1,0 +1,102 @@
+.scripts {
+	width: 50%;
+	padding-top: 29px;
+	padding-left: 13px;
+}
+.scripts-header {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 40px;
+}
+.scripts-header span {
+	font-size: 18px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.scripts-header__navigation {
+	display: flex;
+}
+.navigation__left, .navigation__right {
+	//display: inline-block;
+	margin: 0;
+	width: 16px;
+	height: 16px;
+	background-image: url('/src/assets/M Copy@1x.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+}
+.navigation__right {
+	transform: rotate(-180deg);
+	margin-left: 15px;
+	//transform: translateY(-10deg);
+}
+.scroll-container {
+	overflow: hidden;
+	position: relative;
+}
+.scroll-wrapper {
+	height: 100%;
+	width: max-content;
+}
+.scroll-section {
+	max-width: 670px;
+	height: 100%;
+	display: inline-block;
+}
+.scripts-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+//Оптимизировать айтемы
+.scripts-item {
+	width: 200px;
+	height: 100px;
+	background: #F7F7F7;
+	border-radius: 20px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	padding: 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&:hover {
+		background: #FFFFFF;
+		box-shadow: 0 2px 6px 0 rgba(197,186,186,0.50);
+		border-radius: 20px;
+		cursor: pointer;
+	}
+}
+.scripts-item__icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-pos: center center;
+	background-repeat: no-repeat;
+}
+.bulb .scripts-item__icon {
+	background-image: url('/src/assets/icon_sun@1x.png');
+}
+.bulb.active .scripts-item__icon {
+	background-image: url('/src/assets/icon_sun_2@1x.png');
+}
+.scheduled .scripts-item__icon {
+	background-image: url('/src/assets/icon_scheduled@1x.png');
+}
+.temperature .scripts-item__icon {
+	background-image: url('/src/assets/icon_temperature@1x.png');
+}
+.temperature.active .scripts-item__icon {
+	background-image: url('/src/assets/icon_temperature_2@1x.png');
+}
+.scripts-item__title {
+	font-size: 14px;
+	text-align: left;
+}
+.scripts-item__subtitle {
+	font-family: "ArialMT";
+	font-size: 12px;
+	color: #858585;
+	margin-top: 4px;
+}
