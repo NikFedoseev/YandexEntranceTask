@@ -1,3 +1,8 @@
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-content {
   display: flex;
   flex-direction: column;
@@ -5,24 +10,29 @@
   background-color: #fff;
   border-radius: 20px;
 }
-.modal-light__header{
+
+.modal-light__header {
   display: flex;
   justify-content: space-between;
   text-align: left;
 }
+
 .modal-light__info {
   display: flex;
   flex-direction: column;
 }
+
 .modal-light__title {
   font-size: 27px;
   margin-bottom: 6px;
 }
+
 .modal-light__subtitle {
   font-family: "ArialMT";
   font-size: 14px;
   margin-bottom: 20px;
 }
+
 .modal-light__icon {
   width: 36px;
   height: 36px;
@@ -30,10 +40,12 @@
   background-position: center center;
   background-size: cover;
 }
+
 .modal-light__main {
   display: flex;
   flex-direction: column;
 }
+
 .modal-light__mode {
   text-align: left;
   font-family: "Arial-BoldMT";
@@ -48,10 +60,11 @@
     cursor: pointer;
   }
 }
+
 .modal-light__brightness {
   width: 580px;
   height: 60px;
-  background-image: linear-gradient(-85deg, #FF9E00  2%, #FFE682 98%);
+  background-image: linear-gradient(-85deg, #FF9E00 2%, #FFE682 98%);
   border-radius: 30px;
   margin-top: 25px;
   position: relative;
@@ -60,34 +73,39 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .small-bright-icon {
   background-image: url('/src/assets/icon_sun_min.png');
   width: 36px;
   height: 36px;
   margin-left: 15px;
 }
+
 .large-bright-icon {
   background-image: url('/src/assets/icon_sun_max.png');
   width: 36px;
   height: 36px;
   margin-right: 15px;
 }
-.slider {
+
+.modal-light__brightness .slider {
   position: absolute;
   top: 0;
   left: 59%;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 3px solid rgba(51,51,51,0.10);
+  border: 3px solid rgba(51, 51, 51, 0.10);
   box-shadow: 0 0 0 4px #FFFFFF;
 }
+
 .modal-buttons {
   display: flex;
   margin-top: 20px;
   justify-content: space-between;
 }
-.modal-closeIcon{
+
+.modal-closeIcon {
   width: 307px;
   height: 60px;
   text-align: center;
@@ -98,6 +116,7 @@
   justify-content: center;
   cursor: pointer;
 }
+
 .modal-confirm {
   background-color: #FFCD00;
 }

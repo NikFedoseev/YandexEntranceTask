@@ -1,18 +1,19 @@
 .modal-bg {
   opacity: 0;
-  //display: none;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(51,51,51,.5);
+  background: rgba(51, 51, 51, .5);
   transition: opacity .4s ease;
   &.open {
     opacity: 1;
     z-index: 10;
   }
 }
+
 .modal-content {
   font-size: 36px;
   opacity: 0;
@@ -24,6 +25,7 @@
     visibility: visible;
   }
 }
+
 .popup-closeIcon {
   display: inline-block;
   width: 16px;
@@ -34,20 +36,33 @@
   border-radius: 50%;
   z-index: 10;
 }
-.modal {
-    //background-color: #f3f3f3;
-    border-radius: 20px;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    display: none;
 
-    &.open {
-      transform: translate(-50%,-50%);
-      width: 630px !important;
-      height: auto !important;
-      top: 50% !important; 
-      left: 50% !important;
-      z-index: 11;
-    }
+.modal {
+  background-color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  &.open {
+    transform: translate(-50%, -50%);
+    width: 630px !important;
+    height: auto !important;
+    top: 50% !important;
+    left: 50% !important;
+    z-index: 11;
+    //flex-direction: column;
+    //background-color: transparent;
+  }
+}
+
+.modal-buttons {
+  opacity: 0;
+  transition: opacity .4s ease;
+  visibility: hidden;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
 }
