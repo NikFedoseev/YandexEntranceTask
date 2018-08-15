@@ -60,7 +60,7 @@ module.exports = {
 		}),
 		new CopyWebpackPlugin([{
 	        from: './src/fonts',
-	        to: './dist/fonts'
+	        to: './fonts'
 	      },
 	      {
 	        from: './src/img',
@@ -68,7 +68,7 @@ module.exports = {
 	      },
 	      {
 	        from: './src/assets',
-	        to: './dist/assets'
+	        to: './assets'
 	      },
 	    ]),
 	    new HtmlWebpackPlugin({

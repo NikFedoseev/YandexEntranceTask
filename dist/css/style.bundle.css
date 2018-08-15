@@ -20,8 +20,7 @@ body {
   margin: 0 auto;
   background-color: #fff;
   font-family: "Arial-BoldMT";
-  min-height: 100vh;
-  overflow-x: hidden; }
+  min-height: 100vh; }
 
 a {
   text-decoration: none; }
@@ -518,5 +517,9 @@ footer a {
 
 .modal-confirm {
   background-color: #FFCD00; }
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=style.bundle.css.map*/
